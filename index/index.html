@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Box</title>
+    <style>
+        /*Estilizar o contêiner flex*/
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-around;
+            height: 400px;
+            /* Defina um altura para o contâiner*/
+            border: 2px solid palevioletred;
+            /* De*/
+            border: 2px solid #333;
+        }
+        /* Estileze os intens fix dentro do coitâiner*/
+        .item{
+            width: 100px;
+            height: 100px;
+            background-color: plum;
+            color: #fff;
+            text-align: center;
+            line-height: 100px;
+            margin: 10px;
+        }
+        /* Aplique alinhamento vertical aos itens */
+        .item:nth-child(odd){
+            align-self: flex-end;
+        }
+        /* Aplique alinhamento horizontal aos itens */
+        .item:nth-child(3n){
+            justify-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="itwm">1</div>
+        <div class="itwm">2</div>
+        <div class="itwm">3</div>
+        <div class="itwm">4</div>
+        <div class="itwm">5</div>
+        <div class="itwm">6</div>        
+        <div class="itwm">7</div>
+
+    </div>
+    
+</body>
+</html>
